@@ -7,227 +7,262 @@
     <title>JS Documentation</title>
 
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/modal.css">
+
     <style></style>
 </head>
 <body>
-    
-    <div class="container">
+
+  <div class="container">
 
 
-        <div id="introduction">
-            <div class="content">
-                <h3>Introducción</h3>
-                <p>Esta documentación, esta basada en la documentación oficial de <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">JavaScript</a> donde la estructuración de la misma se basa en la siguiente imagen: </p>
-                <button id="btn-show-image">Mostrar imagen</button>
-                <img hidden="true" src="../public/source.jpeg" alt="imagen de origen de datos" width="900px" height="800px">
-            </div>
-        </div>
-
-        <!--DOM-->
-        <div class="card">
-          <div class="box">
-            <div class="content">
-              <h2>01</h2>
-              <h3>DOM</h3>
-              <p style="font-size: 0.5rem;">
-                El DOM (Document Object Model, en español Modelo de Objetos del Documento)
-                 es una API definida para representar e interactuar con cualquier documento HTML o XML. 
-                 El DOM es un modelo de documento que se carga en el navegador web y que representa el documento como un árbol de nodos, 
-                 en donde cada nodo representa una parte del documento (puede tratarse de un elemento, una cadena de texto o un comentario).</p>
-              <a href="./DOM/dom.html">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-         <!--CLASES-->
-        <div class="card">
-          <div class="box">
-            <div class="content">
-              <h2>02</h2>
-              <h3>Clases</h3>
-              <p>Las clases de javascript, introducidas en ECMAScript 2015, son una mejora sintáctica sobre la herencia basada en prototipos de JavaScript.
-                 La sintaxis de las clases no introduce un nuevo modelo de herencia orientada a objetos en JavaScript.
-                  Las clases de JavaScript proveen una sintaxis mucho más clara y simple para crear objetos y lidiar con la herencia.</p>
-              <a href="./clases/clases.html">Read More</a>
-            </div>
-          </div>
-        </div>
-      
-         <!--ARRAYS-->
-        <div class="card">
-          <div class="box">
-            <div class="content">
-              <h2>03</h2>
-              <h3>Arrays</h3>
-              <p style="font-size: 0.5rem;">Los arrays son objetos similares a una lista cuyo prototipo proporciona métodos para efectuar operaciones de recorrido y de mutación.
-                 Tanto la longitud como el tipo de los elementos de un array son variables. Dado que la longitud de un array puede cambiar en cualquier momento,
-                  y los datos se pueden almacenar en ubicaciones no contiguas, no hay garantía de que los arrays de JavaScript sean densos; 
-                  esto depende de cómo el programador elija usarlos.</p>
-              <a href="./arrays/arrays.html">Read More</a>
-            </div>
-          </div>
-        </div>
-
-
-         <!--FETCH API-->
-        <div class="card">
-            <div class="box">
-              <div class="content">
-                <h2>04</h2>
-                <h3>Fetch API</h3>
-                <p>La API Fetch proporciona una interfaz para recuperar recursos (incluso a través de la red).
-                     Resultará familiar a cualquiera que haya usado XMLHttpRequest,
-                      pero la nueva API ofrece un conjunto de características más potente y flexible.</p>
-                <a href="./fetchApi/fetchApi.html">Read More</a>
-              </div>
-            </div>
-          </div>
-
-
-           <!--VARIABLES-->
-          <div class="card">
-            <div class="box">
-              <div class="content">
-                <h2>05</h2>
-                <h3>Variables</h3>
-                <p>Las Variables son contenedores en los que puedes almacenar valores.
-                     Primero debes declarar la variable con la palabra clave var (menos recomendado) o let, seguida del nombre que le quieras dar.
-                      Se recomienda más el uso de let que de var</p>
-                <a href="./variables/variables.html">Read More</a>
-              </div>
-            </div>
-          </div>
-
-
-           <!--SYNTAX-->
-          <div class="card">
-            <div class="box">
-              <div class="content">
-                <h2>06</h2>
-                <h3>Syntax</h3>
-                <p>La sintaxis de JavaScript es el conjunto de reglas que definen un programa JavaScript correctamente estructurado.
-                    Los ejemplos a continuación hacen uso de la función de registro del objeto de la consola presente en la mayoría de 
-                    los navegadores para la salida de texto estándar.</p>
-                <a href="./syntaxs/syntax.html">Read More</a>
-              </div>
-            </div>
-          </div>
-
-
-           <!--STRINGS-->
-          <div class="card">
-            <div class="box">
-              <div class="content">
-                <h2>07</h2>
-                <h3>Strings</h3>
-                <p>El objeto String se utiliza para representar y manipular una secuencia de caracteres.<br>
-                    Las cadenas son útiles para almacenar datos que se pueden representar en forma de texto.
-                     Algunas de las operaciones más utilizadas en cadenas son verificar su length, para construirlas y 
-                     concatenarlas usando operadores de cadena + y +=, verificando la existencia o ubicación de subcadenas con indexOf() 
-                     o extraer subcadenas con el método substring().
-                </p>
-                <a href="./strings/strings.html">Read More</a>
-              </div>
-            </div>
-          </div>
-
-
-           <!--PROMISES-->
-          <div class="card">
-            <div class="box">
-              <div class="content">
-                <h2>08</h2>
-                <h3>Promises</h3>
-                <p style="font-size: 0.5rem;">El objeto Promise representa la eventual finalización (o falla) de una operación asincrónica y su valor resultante.<br>
-                    Una Promesa (Promise) es un proxy de un valor que no necesariamente se conoce cuando se crea la promesa. 
-                    Le permite asociar controladores con el valor eventual de éxito o el motivo de falla de una acción asíncrona. 
-                    Esto permite que los métodos asíncronos devuelvan valores como los métodos síncronos: en lugar de devolver inmediatamente el valor final, 
-                    el método asíncrono devuelve la promesa de proporcionar el valor en algún momento en el futuro.
-                </p>
-                <a href="./promises/promises.html">Read More</a>
-              </div>
-            </div>
-          </div>
-
-
-           <!--OBJECTS-->
-          <div class="card">
-            <div class="box">
-              <div class="content">
-                <h2>09</h2>
-                <h3>Objects</h3>
-                <p>La clase Object representa uno de los tipos de datos en Javascript.
-                     Es usado para guardar una colección de datos definidos y entidades más complejas. 
-                     Los objetos pueden ser creados utilizando el constructor Object() o la sintaxis literal / inicializador de objeto (en-US).</p>
-                <a href="./objects/objects.html">Read More</a>
-              </div>
-            </div>
-          </div>
-
-
-           <!--NUMBER-->
-          <div class="card">
-            <div class="box">
-              <div class="content">
-                <h2>10</h2>
-                <h3>Number</h3>
-                <p>Number es un objeto primitivo envolvente que permite representar y manipular valores numéricos cómo 37 o -9.25. 
-                    El constructor Number contiene constantes y métodos para trabajar con números.
-                     Valores de otro tipo pueden ser convertidos a números usando la función Number().</p>
-                <a href="../html/number/number.html">Read More</a>
-              </div>
-            </div>
-          </div>
-
-
-           <!--MODULES-->
-          <div class="card">
-            <div class="box">
-              <div class="content">
-                <h2>11</h2>
-                <h3>Modules</h3>
-                <p>Son mecanismos para dividir programas JavaScript en módulos separados que se puedan importar cuando sea necesario.
-                     Node.js ha tenido esta capacidad durante mucho tiempo, y hay una serie de bibliotecas y marcos de JavaScript que permiten el uso de módulos
-                      (por ejemplo, CommonJS y AMD otros basados en sistemas de módulos como RequireJS, y recientemente Webpack y Babel).</p>
-                <a href="./moduls/modules.html">Read More</a>
-              </div>
-            </div>
-          </div>
-
-
-           <!--MISC-->
-          <div class="card">
-            <div class="box">
-              <div class="content">
-                <h2>12</h2>
-                <h3>Misc</h3>
-                <p style="font-size: 0.5rem;">
-                    Mientras que HTML define la estructura y el contenido de una página web y el CSS define el formato y la apariencia, 
-                    JavaScript agrega interactividad a una página web y crea aplicaciones web enriquecidas.<br>
-                    Sin embargo, el término paraguas "JavaScript", tal como se entiende en un contexto de navegador web, 
-                    contiene varios elementos muy diferentes. Uno de ellos es el lenguaje principal (ECMAScript), otro es la colección de las APIs Web, 
-                    incluyendo el DOM (Document Object Model).</p>
-                <a href="./miscs/misc.html">Read More</a>
-              </div>
-            </div>
-          </div>
-
-
-           <!--FUNCTIONS-->
-          <div class="card">
-            <div class="box">
-              <div class="content">
-                <h2>13</h2>
-                <h3>Functions</h3>
-                <p> En Javascript las funciones son diferentes a las funciones de otros lenguajes de programación.
-                     En Javascript las funciones son un objeto. Por ello se les puede asignar variables, arrays u otros objetos.
-                      La forma en la cual hallamos definido nuestra función, definirá el comportamiento de la misma.</p>
-                <a href="./functins/functions.html">Read More</a>
-              </div>
-            </div>
-          </div>
+    <div id="introduction">
+      <div class="content">
+        <h3>Introducción</h3>
+        <p>Esta documentación, esta basada en la documentación oficial de <a
+            href="https://developer.mozilla.org/es/docs/Web/JavaScript">JavaScript</a> donde la estructuración de la
+          misma se basa en la siguiente imagen: </p>
+        <button id="btn-show-image" class="btn btn-principal">Mostrar imagen</button>
+        
       </div>
+    </div>
 
+    <!--DOM-->
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>01</h2>
+          <h3>DOM</h3>
+          <p style="font-size: 0.5rem;">
+            El DOM (Document Object Model, en español Modelo de Objetos del Documento)
+            es una API definida para representar e interactuar con cualquier documento HTML o XML.
+            El DOM es un modelo de documento que se carga en el navegador web y que representa el documento como un
+            árbol de nodos,
+            en donde cada nodo representa una parte del documento (puede tratarse de un elemento, una cadena de texto o
+            un comentario).</p>
+          <a href="./DOM/dom.html">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!--CLASES-->
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>02</h2>
+          <h3>Clases</h3>
+          <p>Las clases de javascript, introducidas en ECMAScript 2015, son una mejora sintáctica sobre la herencia
+            basada en prototipos de JavaScript.
+            La sintaxis de las clases no introduce un nuevo modelo de herencia orientada a objetos en JavaScript.
+            Las clases de JavaScript proveen una sintaxis mucho más clara y simple para crear objetos y lidiar con la
+            herencia.</p>
+          <a href="./clases/clases.html">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!--ARRAYS-->
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>03</h2>
+          <h3>Arrays</h3>
+          <p style="font-size: 0.5rem;">Los arrays son objetos similares a una lista cuyo prototipo proporciona métodos
+            para efectuar operaciones de recorrido y de mutación.
+            Tanto la longitud como el tipo de los elementos de un array son variables. Dado que la longitud de un array
+            puede cambiar en cualquier momento,
+            y los datos se pueden almacenar en ubicaciones no contiguas, no hay garantía de que los arrays de JavaScript
+            sean densos;
+            esto depende de cómo el programador elija usarlos.</p>
+          <a href="./arrays/arrays.html">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!--FETCH API-->
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>04</h2>
+          <h3>Fetch API</h3>
+          <p>La API Fetch proporciona una interfaz para recuperar recursos (incluso a través de la red).
+            Resultará familiar a cualquiera que haya usado XMLHttpRequest,
+            pero la nueva API ofrece un conjunto de características más potente y flexible.</p>
+          <a href="./fetchApi/fetchApi.html">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!--VARIABLES-->
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>05</h2>
+          <h3>Variables</h3>
+          <p>Las Variables son contenedores en los que puedes almacenar valores.
+            Primero debes declarar la variable con la palabra clave var (menos recomendado) o let, seguida del nombre
+            que le quieras dar.
+            Se recomienda más el uso de let que de var</p>
+          <a href="./variables/variables.html">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!--SYNTAX-->
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>06</h2>
+          <h3>Syntax</h3>
+          <p>La sintaxis de JavaScript es el conjunto de reglas que definen un programa JavaScript correctamente
+            estructurado.
+            Los ejemplos a continuación hacen uso de la función de registro del objeto de la consola presente en la
+            mayoría de
+            los navegadores para la salida de texto estándar.</p>
+          <a href="./syntaxs/syntax.html">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!--STRINGS-->
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>07</h2>
+          <h3>Strings</h3>
+          <p>El objeto String se utiliza para representar y manipular una secuencia de caracteres.<br>
+            Las cadenas son útiles para almacenar datos que se pueden representar en forma de texto.
+            Algunas de las operaciones más utilizadas en cadenas son verificar su length, para construirlas y
+            concatenarlas usando operadores de cadena + y +=, verificando la existencia o ubicación de subcadenas con
+            indexOf()
+            o extraer subcadenas con el método substring().
+          </p>
+          <a href="./strings/strings.html">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!--PROMISES-->
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>08</h2>
+          <h3>Promises</h3>
+          <p style="font-size: 0.5rem;">El objeto Promise representa la eventual finalización (o falla) de una operación
+            asincrónica y su valor resultante.<br>
+            Una Promesa (Promise) es un proxy de un valor que no necesariamente se conoce cuando se crea la promesa.
+            Le permite asociar controladores con el valor eventual de éxito o el motivo de falla de una acción
+            asíncrona.
+            Esto permite que los métodos asíncronos devuelvan valores como los métodos síncronos: en lugar de devolver
+            inmediatamente el valor final,
+            el método asíncrono devuelve la promesa de proporcionar el valor en algún momento en el futuro.
+          </p>
+          <a href="./promises/promises.html">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!--OBJECTS-->
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>09</h2>
+          <h3>Objects</h3>
+          <p>La clase Object representa uno de los tipos de datos en Javascript.
+            Es usado para guardar una colección de datos definidos y entidades más complejas.
+            Los objetos pueden ser creados utilizando el constructor Object() o la sintaxis literal / inicializador de
+            objeto (en-US).</p>
+          <a href="./objects/objects.html">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!--NUMBER-->
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>10</h2>
+          <h3>Number</h3>
+          <p>Number es un objeto primitivo envolvente que permite representar y manipular valores numéricos cómo 37 o
+            -9.25.
+            El constructor Number contiene constantes y métodos para trabajar con números.
+            Valores de otro tipo pueden ser convertidos a números usando la función Number().</p>
+          <a href="../html/number/number.html">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!--MODULES-->
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>11</h2>
+          <h3>Modules</h3>
+          <p>Son mecanismos para dividir programas JavaScript en módulos separados que se puedan importar cuando sea
+            necesario.
+            Node.js ha tenido esta capacidad durante mucho tiempo, y hay una serie de bibliotecas y marcos de JavaScript
+            que permiten el uso de módulos
+            (por ejemplo, CommonJS y AMD otros basados en sistemas de módulos como RequireJS, y recientemente Webpack y
+            Babel).</p>
+          <a href="./moduls/modules.html">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!--MISC-->
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>12</h2>
+          <h3>Misc</h3>
+          <p style="font-size: 0.5rem;">
+            Mientras que HTML define la estructura y el contenido de una página web y el CSS define el formato y la
+            apariencia,
+            JavaScript agrega interactividad a una página web y crea aplicaciones web enriquecidas.<br>
+            Sin embargo, el término paraguas "JavaScript", tal como se entiende en un contexto de navegador web,
+            contiene varios elementos muy diferentes. Uno de ellos es el lenguaje principal (ECMAScript), otro es la
+            colección de las APIs Web,
+            incluyendo el DOM (Document Object Model).</p>
+          <a href="./miscs/misc.html">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!--FUNCTIONS-->
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>13</h2>
+          <h3>Functions</h3>
+          <p> En Javascript las funciones son diferentes a las funciones de otros lenguajes de programación.
+            En Javascript las funciones son un objeto. Por ello se les puede asignar variables, arrays u otros objetos.
+            La forma en la cual hallamos definido nuestra función, definirá el comportamiento de la misma.</p>
+          <a href="./functins/functions.html">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- The Modal -->
+  <div id="modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img  src="../public/source.jpeg" alt="imagen de origen de datos" width="100%" height="100%" style="border-radius: 5px;">
+    </div>
+
+  </div>
     <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/modal.js"></script>
 </body>
 </html>
