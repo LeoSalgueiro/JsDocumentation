@@ -1,67 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number</title>
 
-    
-    <link rel="stylesheet" href="numberStyle.css">
+
     
 
+    <link rel="stylesheet" href="../../css/btns.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="numberStyle.css">
+    <link rel="stylesheet" href="../../css/modal.css">
+    <link rel="stylesheet" href="../../css/code.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="numberScript.js"></script>
+
 </head>
 <body>
+
+
+  <div id="introductionNumber">
+    <div class="content">
+      <h3>Introducción</h3>
+      <p>En esta sección vas a encontrar todo lo relacionado a los números en JavaScript. Además, con cada tema hallarás ejemplos para que todo quede mas claro</p>
+      
+      <br>
+      <h3>Number</h3>
+      <p>Number es un objeto primitivo envolvente que permite representar y manipular valores numéricos cómo 37 o -9.25. El constructor Number contiene constantes y métodos para trabajar con números. Valores de otro tipo pueden ser convertidos a números usando la función Number().</p>
+      
+      <div class="section-content">
+        <div class="code-example">
+          <pre class="code">
+            <code><span class="token keyword">new</span> <span class="token class-name">Number</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span></code>
+            <code><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Number</span><span class="token punctuation">(</span><span class="token string">'123'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// a === 123 es false</span></code>
+            <code><span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">'123'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// b === 123 es true</span></code>
+            <code>a <span class="token keyword">instanceof</span> <span class="token class-name">Number</span><span class="token punctuation">;</span> <span class="token comment">// es true</span></code>
+            <code>b <span class="token keyword">instanceof</span> <span class="token class-name">Number</span><span class="token punctuation">;</span> <span class="token comment">// es false</span></code>
+          </pre>
+          <button type="button" style="position: absolute;" class="copy-icon"><span class="icon"></span></button>
+          <span class="copy-icon-message visually-hidden" role="alert" style="top: 52px;"></span>
+        </div>
+      </div>
+      
+ 
+      
+    </div>
+  </div>
    
     <div class='container'>
 
-        <div class='flip_box'>
-      
-          <div class='front'>
-            <p class='f_title'>Property insurance</p>
-            <p class='f_subline'>Pack</p>
-            <h1 class='f_headline'>Absolute safety</h1>
-          </div>
-      
-          <div class='back'>
-            <h1 class='b_headline'>Absolute safety</h1>
-            <p class='b_text'>Comprehensive insurance of apartments<br />including structural elements, decoration,<br /> equipment, property and responsibility<br />to neighbors in the expanded package<br />insurance risks</p>
-            <button class='b_button'><span>Buy now</span></button>
-          </div>
-      
+    <!--Number.ParseInt()-->
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>01</h2>
+          <h3>ParseInt</h3>
+          <p style="font-size: 0.8rem;">
+            El método <code><span class="token class-name">Number</span>.<span class="token method">parseInt</span><span class="token punctuation">()</span>
+               </code>analiza un argumento de tipo String y
+             devuelve un número entero de la raíz o base especificada.</p>
+          <button id="btn-parseInt" style="position: relative"  class="btn btn-secondary">Enseñame más</button>
         </div>
+      </div>
+    </div>
 
-        <div class='flip_box2'>
-      
-            <div class='front'>
-              <p class='f_title'>Property insurance</p>
-              <p class='f_subline'>Pack</p>
-              <h1 class='f_headline'>Absolute safety</h1>
-            </div>
-        
-            <div class='back'>
-              <h1 class='b_headline'>Absolute safety</h1>
-              <p class='b_text'>Comprehensive insurance of apartments<br />including structural elements, decoration,<br /> equipment, property and responsibility<br />to neighbors in the expanded package<br />insurance risks</p>
-              <button class='b_button'><span>Buy now</span></button>
-            </div>
-        
-          </div>
-      
+      <!-- The Modal -->
+      <div id="modalParseInt" class="modal">
 
-        <!--Background clases-->
-        <div class='r_wrap'>
-      
-          <div class='b_round'></div>
-          <div class='s_round'>
-            <div class='s_arrow'></div>
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Number.parseInt()</h3>
+               <br>
+          
+          <div class="section-content">
+            <h3>Sintaxis</h3>
+            <div class="code-example">
+              <pre class="code">
+<code><span class="token class-name">Number</span>.<span class="token method">parseInt</span><span class="token punctuation">(</span>string,[ radix]<span class="token punctuation">)</span> </code>
+              </pre>
+            </div>
+            
           </div>
+       
+          <h3>Parámetros</h3> 
+          <br>
+          <input disabled="true" class="input-disabled" value="String">
+          <p>El valor a analizar. Si este argumento no es una cadena,
+             entonces se convierte en uno usando la ToString operación abstracta. 
+             Se ignoran los espacios en blanco iniciales en este argumento.
+          </p>
+          <br>
+          <input disabled="true" class="input-disabled" value="radix"><input disabled="true" class="input-rounded-disabled" value="Opcional">
+          <p>Un número entero entre <span class="back-color-code">2</span> y <span class="back-color-code">36</span> que representa la raíz (la base en los sistemas numéricos matemáticos) del string. Tenga cuidado, ¡esto no se establece de forma predeterminada en 10!</p>
+<br>
+
+<h3>Valor de retorno</h3>
+
+<p>Un entero analizado del dado string.</p>
+<br>
+<p>Si radix es menor a <span class="back-color-code">2</span> o mayor que <span class="back-color-code">36</span> y el primer carácter que no es un 
+  espacio en blanco no se puede convertir en un número, entonces se devuelve <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/NaN">NaN</a> </p>
+
         </div>
+    
+      </div>
+
+
+    <!--NaN-->
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>02</h2>
+          <h3>NaN</h3>
+          <p style="font-size: 0.8rem;">La propiedad global <span class="back-color-code">NaN</span> es un valor que representa Not-A-Number.</p>
+          <button id="btn-nan" style="position: relative" class="btn btn-secondary">Enseñame más</button>
+        </div>
+      </div>
+    </div>
+
+          <!-- The Modal -->
+  <div id="modalNaN" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      
+    </div>
+
+  </div>
+
+    <!--Division Reminder-->
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>03</h2>
+          <h3>Division Remainder (%)</h3>
+          <p style="font-size: 0.5rem;">Los arrays son objetos similares a una lista cuyo prototipo proporciona métodos
+            para efectuar operaciones de recorrido y de mutación.
+            Tanto la longitud como el tipo de los elementos de un array son variables. Dado que la longitud de un array
+            puede cambiar en cualquier momento,
+            y los datos se pueden almacenar en ubicaciones no contiguas, no hay garantía de que los arrays de JavaScript
+            sean densos;
+            esto depende de cómo el programador elija usarlos.</p>
+          <button id="btn-divisionRemainder" style="position: relative"  class="btn btn-secondary">Enseñame más</button>
+        </div>
+      </div>
+    </div>
+
+          <!-- The Modal -->
+  <div id="modalDivisionReminder" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      
+    </div>
+
+  </div>
+
+
+    <!--ToString-->
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>04</h2>
+          <h3>.ToString()</h3>
+          <p>La API Fetch proporciona una interfaz para recuperar recursos (incluso a través de la red).
+            Resultará familiar a cualquiera que haya usado XMLHttpRequest,
+            pero la nueva API ofrece un conjunto de características más potente y flexible.</p>
+          <button id="btn-toString" style="position: relative"  class="btn btn-secondary">Enseñame más</button>
+        </div>
+      </div>
+    </div>
+
+          <!-- The Modal -->
+  <div id="modalToString" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      
+    </div>
+
+  </div>
       
       </div>
-    
 
-    
+
+      <script src="numberScript.js"></script>
 </body>
 </html>

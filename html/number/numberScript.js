@@ -1,23 +1,26 @@
-$(document).ready(function() {
+// Get the <span> element that closes the modal
+const span = document.getElementsByClassName("close")[0];
 
-    var s_round = '.s_round';
-  
-    $(s_round).hover(function() {
-      $('.b_round').toggleClass('b_round_hover');
-      return false;
-    });
-  
-    $(s_round).click(function() {
-      $('.flip_box').toggleClass('flipped');
-      $(this).addClass('s_round_click');
-      $('.s_arrow').toggleClass('s_arrow_rotate');
-      $('.b_round').toggleClass('b_round_back_hover');
-      return false;
-    });
-  
-    $(s_round).on('transitionend', function() {
-      $(this).removeClass('s_round_click');
-      $(this).addClass('s_round_back');
-      return false;
-    });
-  });
+//get the buttons
+const btnParseInt = document.getElementById('btn-parseInt')
+
+// Get the modals
+const modalParseInt = document.getElementById("modalParseInt");
+
+
+// When the user clicks the button, open the modal 
+btnParseInt.onclick = function() {
+  modalParseInt.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modalParseInt.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalParseInt) {
+    modalParseInt.style.display = "none";
+  }
+}
