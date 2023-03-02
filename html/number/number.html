@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number</title>
 
 
-    
 
-    <link rel="stylesheet" href="../../css/btns.css">
-    <link rel="stylesheet" href="../../css/styles.css">
-    <link rel="stylesheet" href="numberStyle.css">
-    <link rel="stylesheet" href="../../css/modal.css">
-    <link rel="stylesheet" href="../../css/code.css">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../../css/btns.css">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="numberStyle.css">
+  <link rel="stylesheet" href="../../css/modal.css">
+  <link rel="stylesheet" href="../../css/code.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
+
 <body>
 
 
   <div id="introductionNumber">
     <div class="content">
       <h3>Introducción</h3>
-      <p>En esta sección vas a encontrar todo lo relacionado a los números en JavaScript. Además, con cada tema hallarás ejemplos para que todo quede mas claro</p>
-      
+      <p>En esta sección vas a encontrar todo lo relacionado a los números en JavaScript. Además, con cada tema hallarás
+        ejemplos para que todo quede mas claro</p>
+
       <br>
       <h3>Number</h3>
-      <p>Number es un objeto primitivo envolvente que permite representar y manipular valores numéricos cómo 37 o -9.25. El constructor Number contiene constantes y métodos para trabajar con números. Valores de otro tipo pueden ser convertidos a números usando la función Number().</p>
-      
+      <p>Number es un objeto primitivo envolvente que permite representar y manipular valores numéricos cómo 37 o -9.25.
+        El constructor Number contiene constantes y métodos para trabajar con números. Valores de otro tipo pueden ser
+        convertidos a números usando la función Number().</p>
+
       <div class="section-content">
         <div class="code-example">
           <pre class="code">
@@ -44,70 +49,75 @@
           <span class="copy-icon-message visually-hidden" role="alert" style="top: 52px;"></span>
         </div>
       </div>
-      
- 
-      
+
+
+
     </div>
   </div>
-   
-    <div class='container'>
+
+  <div class='container'>
 
     <!--Number.ParseInt()-->
     <div class="card">
       <div class="box">
         <div class="content">
           <h2>01</h2>
-          <h3>ParseInt</h3>
+          <h3>.ParseInt()</h3>
           <p style="font-size: 0.8rem;">
             El método <code><span class="token class-name">Number</span>.<span class="token method">parseInt</span><span class="token punctuation">()</span>
                </code>analiza un argumento de tipo String y
-             devuelve un número entero de la raíz o base especificada.</p>
-          <button id="btn-parseInt" style="position: relative"  class="btn btn-secondary">Enseñame más</button>
+            devuelve un número entero de la raíz o base especificada.</p>
+          <button id="btn-parseInt" style="position: relative" class="btn btn-secondary">Enseñame más</button>
         </div>
       </div>
     </div>
 
-      <!-- The Modal -->
-      <div id="modalParseInt" class="modal">
+    <!-- The Modal -->
+    <div id="modalParseInt" class="modal">
 
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>Number.parseInt()</h3>
-               <br>
-          
-          <div class="section-content">
-            <h3>Sintaxis</h3>
-            <div class="code-example">
-              <pre class="code">
-<code><span class="token class-name">Number</span>.<span class="token method">parseInt</span><span class="token punctuation">(</span>string,[ radix]<span class="token punctuation">)</span> </code>
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Number.parseInt()</h3>
+        <br>
+
+        <div class="section-content">
+          <h3>Sintaxis</h3>
+          <div class="code-example">
+            <pre class="code">
+                <code><span class="token class-name">Number</span>.<span class="token method">parseInt</span><span class="token punctuation">(</span>string,[ radix]<span class="token punctuation">)</span> </code>
               </pre>
-            </div>
-            
           </div>
-       
-          <h3>Parámetros</h3> 
-          <br>
-          <input disabled="true" class="input-disabled" value="String">
-          <p>El valor a analizar. Si este argumento no es una cadena,
-             entonces se convierte en uno usando la ToString operación abstracta. 
-             Se ignoran los espacios en blanco iniciales en este argumento.
-          </p>
-          <br>
-          <input disabled="true" class="input-disabled" value="radix"><input disabled="true" class="input-rounded-disabled" value="Opcional">
-          <p>Un número entero entre <span class="back-color-code">2</span> y <span class="back-color-code">36</span> que representa la raíz (la base en los sistemas numéricos matemáticos) del string. Tenga cuidado, ¡esto no se establece de forma predeterminada en 10!</p>
-<br>
-
-<h3>Valor de retorno</h3>
-
-<p>Un entero analizado del dado string.</p>
-<br>
-<p>Si radix es menor a <span class="back-color-code">2</span> o mayor que <span class="back-color-code">36</span> y el primer carácter que no es un 
-  espacio en blanco no se puede convertir en un número, entonces se devuelve <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/NaN">NaN</a> </p>
 
         </div>
-    
+
+        <h3>Parámetros</h3>
+        <br>
+        <input disabled="true" class="input-disabled" value="String">
+        <p>El valor a analizar. Si este argumento no es una cadena,
+          entonces se convierte en uno usando la ToString operación abstracta.
+          Se ignoran los espacios en blanco iniciales en este argumento.
+        </p>
+        <br>
+        <input disabled="true" class="input-disabled" value="radix"><input disabled="true"
+          class="input-rounded-disabled" value="Opcional">
+        <p>Un número entero entre <span class="back-color-code">2</span> y <span class="back-color-code">36</span> que
+          representa la raíz (la base en los sistemas numéricos matemáticos) del string. Tenga cuidado, ¡esto no se
+          establece de forma predeterminada en 10!</p>
+        <br>
+
+        <h3>Valor de retorno</h3>
+
+        <p>Un entero analizado del dado string.</p>
+        <br>
+        <p>Si radix es menor a <span class="back-color-code">2</span> o mayor que <span
+            class="back-color-code">36</span> y el primer carácter que no es un
+          espacio en blanco no se puede convertir en un número, entonces se devuelve <a
+            href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/NaN">NaN</a> </p>
+
       </div>
+
+    </div>
 
 
     <!--NaN-->
@@ -116,22 +126,23 @@
         <div class="content">
           <h2>02</h2>
           <h3>NaN</h3>
-          <p style="font-size: 0.8rem;">La propiedad global <span class="back-color-code">NaN</span> es un valor que representa Not-A-Number.</p>
+          <p style="font-size: 0.8rem;">La propiedad global <span class="back-color-code">NaN</span> es un valor que
+            representa Not-A-Number.</p>
           <button id="btn-nan" style="position: relative" class="btn btn-secondary">Enseñame más</button>
         </div>
       </div>
     </div>
 
-          <!-- The Modal -->
-  <div id="modalNaN" class="modal">
+    <!-- The Modal -->
+    <div id="modalNaN" class="modal">
 
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+      </div>
+
     </div>
-
-  </div>
 
     <!--Division Reminder-->
     <div class="card">
@@ -139,28 +150,43 @@
         <div class="content">
           <h2>03</h2>
           <h3>Division Remainder (%)</h3>
-          <p style="font-size: 0.5rem;">Los arrays son objetos similares a una lista cuyo prototipo proporciona métodos
-            para efectuar operaciones de recorrido y de mutación.
-            Tanto la longitud como el tipo de los elementos de un array son variables. Dado que la longitud de un array
-            puede cambiar en cualquier momento,
-            y los datos se pueden almacenar en ubicaciones no contiguas, no hay garantía de que los arrays de JavaScript
-            sean densos;
-            esto depende de cómo el programador elija usarlos.</p>
-          <button id="btn-divisionRemainder" style="position: relative"  class="btn btn-secondary">Enseñame más</button>
+          <p style="font-size: 0.8rem;">El operador resto (%) devuelve el resto de la división entre dos operandos. Siempre toma el signo del dividendo.</p>
+          <button id="btn-divisionRemainder" style="position: relative" class="btn btn-secondary">Enseñame más</button>
         </div>
       </div>
     </div>
 
-          <!-- The Modal -->
-  <div id="modalDivisionReminder" class="modal">
+    <!-- The Modal -->
+    <div id="modalDivisionReminder" class="modal">
 
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <h3>Division Remainde - Resto (%)</h3>
+        <p>El operador resto (%) devuelve el resto de la división entre dos operandos.
+           Siempre toma el signo del dividendo.</p>
+
+           <br>
+           <h3>Sintaxis</h3>
+          
+           <pre class="code" >
+             <code style="color: beige;">Operador: var1 % var2 </code> 
+           </pre>
+
+           <br>
+           <p>Tener en cuenta que en la mayoría de los lenguajes de programación, 
+            el operador de resto es ‘%’, pero en otros (como <a href="">Python</a>,<a href="">Perl</a>) es 
+            el operador módulo. Ambos son iguales para valores positivos,
+             pero cuando el divisor y el dividendo son de signos distintos, 
+             se obtienen distintos resultados. Para obtener el módulo en JavaScript, 
+             en lugar de <span class="back-color-code">a % n</span>, usa <span class="back-color-code">((a % n ) + n ) % n</span>.</p>
+
+
+
+      </div>
+
     </div>
-
-  </div>
 
 
     <!--ToString-->
@@ -169,28 +195,82 @@
         <div class="content">
           <h2>04</h2>
           <h3>.ToString()</h3>
-          <p>La API Fetch proporciona una interfaz para recuperar recursos (incluso a través de la red).
-            Resultará familiar a cualquiera que haya usado XMLHttpRequest,
-            pero la nueva API ofrece un conjunto de características más potente y flexible.</p>
-          <button id="btn-toString" style="position: relative"  class="btn btn-secondary">Enseñame más</button>
+          <p style="font-size: 0.8rem;">Devuelve una cadena que representa al objeto Number especificado</p>
+          <button id="btn-toString" style="position: relative" class="btn btn-secondary">Enseñame más</button>
         </div>
       </div>
     </div>
 
-          <!-- The Modal -->
-  <div id="modalToString" class="modal">
+    <!-- The Modal -->
+    <div id="modalToString" class="modal">
 
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <h3>Number.prototype.toString([base])</h3>
+
+        <h3>Parámetro</h3>
+        <input disabled="true" class="input-disabled" value="base"><input disabled="true"
+        class="input-rounded-disabled" value="Opcional">
+<p>Un entero entre 2 y 36 especificando la base a usar para representar los valores numéricos.</p>
+
+<br>
+<h3>Valor de retorno</h3>
+<p>Una cadena que representa al objeto.</p>
+
+<br>
+
+<h3>Descripción</h3>
+<br>
+<p>El objeto Number sobreescribe el método toString y no lo 
+  hereda del objeto Object; por tanto no hereda Object.prototype.toString().
+   Para objetos Number, el método toString devuelve una cadena que representa al 
+   objeto en la base especificada.</p>
+
+   <br>
+
+   <p>El método toString comprueba su primer argumento, e intenta devolver 
+    una cadena de representación en la base especificada. 
+    Para bases superiores a 10, las letras del alfabeto indican numerales mayores de 9.
+     Por ejemplo, para números hexadecimales (base 16), se utiliza de A hasta F.</p>
+
+     <br>
+
+     <p>Si no se da a toString una base entre 2 y 36, se lanza una excepción.</p>
+     <br>
+     <p>Si no se especifica la base, JavaScript asume la base predefinida, que es 10.</p>
+
+     <br>
+
+     <h3>Ejemplo</h3>
+        <!--Seccion code content-->
+        <div class="section-content">
+          <div class="code-example">
+            <pre class="code">
+                
+               
+              <code> <span class="token keyword">var</span>  howMany<span class="token operator"> = </span><span class="token number">10</span><span class="token punctuation">;</span></code>
+              <code> <span class="token method">alert</span><span class="token punctuation">(</span><span class="token string">"howMany.toString() is "</span><span class="token operator"> + </span>howMany.<span class="token method">toString</span><span class="token punctuation">());</span><span class="token comment"> //displays "10"</span></code>
+              <code> <span class="token method">alert</span><span class="token punctuation">(</span><span class="token string">"45.toString() is "</span><span class="token operator"> + </span>45.<span class="token method">toString</span><span class="token punctuation">());</span><span class="token comment"> //displays "45"</span></code>
+              <code> <span class="token keyword">var</span> x <span class="token operator">=</span> 7 <span class="token punctuation"></span></code>
+              <code> <span class="token method">alert</span><span class="token punctuation">(</span>x.<span class="token method">toString</span><span class="token punctuation">(</span>2<span class="token punctuation">));</span><span class="token comment"> //displays "111"</span></code>
+              
+
+              </code>
+            </pre>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
 
   </div>
-      
-      </div>
 
 
-      <script src="numberScript.js"></script>
+  <script src="numberScript.js"></script>
 </body>
+
 </html>
