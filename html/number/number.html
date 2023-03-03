@@ -139,8 +139,46 @@
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
+        <h3>NaN</h3>
+        <p>La propiedad global NaN es un valor que representa Not-A-Number.</p>
 
-      </div>
+        <h3>Sumario</h3>
+
+        <table>
+          <thead> 
+            
+              <th style="border-top-left-radius: 5px;">
+                Atributos de la propiedad NaN
+            </th> 
+            <th style="border-top-right-radius: 5px;"></th>
+          
+        </thead>
+          <tbody>
+            
+            <tr><td>Sobreescribir</td><td>No</td></tr>
+            <tr><td>Numerable</td><td>No</td></tr>
+            <tr><td>Configurable</td><td>No</td></tr>
+
+          </tbody>
+        </table>
+
+        <br>
+        <h3>Descripción</h3>
+        <p>NaN es una propiedad del global object (objeto global), por ejemplo, es una variable de alcance global.</p>
+      
+      <br>
+      <p>El valor inicial de NaN es Not-A-Number (No es Un Número) - lo mismo que el valor de Number.NaN.</p>
+      <br>
+      <p>Keep text below in sync with Number.NaN page NaN nunca es equivalente con cualquier otro número, incluido el mismo NaN; no puedes chequear el valor de un not-a-number comparándolo con Number.NaN. Usar la función isNaN() para aquello.</p>
+    <br>
+    <p>Muchos métodos de JavaScript (como son el Number constructor, parseFloat y parseInt) retornan NaN si el valor especificado en el parámetro no puede ser parseado como un número.</p>
+<br>
+<p>Puedes utilizar la propiedad NaN para indicar una condición de error para tu función que devuelva un número en caso de éxito.</p>
+<br>
+<p>JavaScript imprime el valor Number.NaN como NaN.</p>
+
+    </div>
+
 
     </div>
 
@@ -163,7 +201,7 @@
       <div class="modal-content">
         <span class="close">&times;</span>
 
-        <h3>Division Remainde - Resto (%)</h3>
+        <h3>Division Remainder - Resto (%)</h3>
         <p>El operador resto (%) devuelve el resto de la división entre dos operandos.
            Siempre toma el signo del dividendo.</p>
 
@@ -174,14 +212,47 @@
              <code style="color: beige;">Operador: var1 % var2 </code> 
            </pre>
 
-           <br>
+          
            <p>Tener en cuenta que en la mayoría de los lenguajes de programación, 
             el operador de resto es ‘%’, pero en otros (como <a href="">Python</a>,<a href="">Perl</a>) es 
             el operador módulo. Ambos son iguales para valores positivos,
              pero cuando el divisor y el dividendo son de signos distintos, 
              se obtienen distintos resultados. Para obtener el módulo en JavaScript, 
              en lugar de <span class="back-color-code">a % n</span>, usa <span class="back-color-code">((a % n ) + n ) % n</span>.</p>
+<br>
+             <h3>Ejemplos</h3>
+<br>
+             <h4>Resto con dividendo positivo</h4>
+             <pre class="code">
+                <code>12<span class="token punctuation"> % </span>5 <span class="token comment">//2</span></code>
+                <code>1<span class="token punctuation"> % </span>-2 <span class="token comment">//1</span></code>
+                <code>1<span class="token punctuation"> % </span>2 <span class="token comment">//1</span></code>
+                <code>2<span class="token punctuation"> % </span>3 <span class="token comment">//2</span></code>
+                <code>5.5<span class="token punctuation"> % </span>2 <span class="token comment">//1.5</span></code>
+             </pre>
 
+             
+             <h4>Resto con dividendo negativo</h4>
+             <pre class="code">
+
+                <code>-12<span class="token punctuation"> % </span>5 <span class="token comment">//-2</span></code>
+                <code>-1<span class="token punctuation"> % </span>2 <span class="token comment">//-1</span></code>
+                <code>-4<span class="token punctuation"> % </span>2 <span class="token comment">//-0</span></code>
+             </pre>
+
+            
+             <h4>Resto con NaN</h4>
+             <pre class="code">
+                <code>NaN<span class="token punctuation"> % </span>2 <span class="token comment">//NaN</span></code>
+             </pre>
+
+            
+             <h4>Resto con Infinity</h4>
+             <pre class="code">
+                <code>Infinity<span class="token punctuation"> % </span>2 <span class="token comment">//NaN</span></code>
+                <code>Infinity<span class="token punctuation"> % </span>0 <span class="token comment">//NaN</span></code>
+                <code>Infinity<span class="token punctuation"> % </span>Infinity <span class="token comment">//NaN</span></code>
+             </pre>
 
 
       </div>

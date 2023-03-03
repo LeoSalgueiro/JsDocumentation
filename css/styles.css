@@ -144,6 +144,40 @@ body #introduction {
 }
 
 
+table{
+  border-collapse: collapse;
+  background-color: rgb(231, 230, 230);
+  text-align: left;
+  width: 100%;
+  padding: 8px;
+
+}
+
+
+table tbody{
+  padding: 4px;
+  
+}
+
+table th{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  text-align: left;
+  background-color: #04aaa2;
+  color: white;
+}
+
+table tr:nth-child(even){background-color: #c8c8c8;}
+
+table td{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+
 
 .input-disabled{
   background-color: #343434;
